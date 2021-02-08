@@ -64,6 +64,11 @@ public class CircularQueueExample
                   System.out.println("deleted:"+ar[Front]);
                   Front = 0;
               }
+              else if(Rear < Front)
+              {
+                  System.out.println("deleted:"+ar[Front]);
+                  Front = Front + 1;
+              }
           }
     }
     
