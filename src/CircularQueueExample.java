@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class SinglyQueueEXample 
+public class CircularQueueExample 
 {
     int ar[];
     int Front,Rear;
-    SinglyQueueEXample()
+    CircularQueueExample()
     {
         ar = new int[5];
         Front = -1;
@@ -13,63 +13,18 @@ public class SinglyQueueEXample
     
     void insert()
     {
-        if(Rear == 4)
-        {
-            System.out.println("Queue full");
-        }
-        else
-        {
-            System.out.println("Enter data");
-            Scanner sc2 = new Scanner(System.in);
-            int data = sc2.nextInt();
             
-            if(Front == -1)
-            {
-                Front  = 0;
-            }
-            Rear = Rear + 1;
-            ar[Rear] = data;
-            System.out.println("data inserted...");
-        }
     }
-    
+        
     void delete()
     {
-        if(Front == -1 || Rear == -1)
-        {
-            System.out.println("Queue empty");
-        }
-        else
-        {
-            if(Front == Rear)
-            {
-                System.out.println("deleted:" +ar[Front]);
-                Front = -1;
-                Rear = -1;
-            }
-            else
-            {
-                System.out.println("deleted:" +ar[Front]);
-                Front = Front + 1;
-            }
-        }
+            
     }
     
     void traverse()
     {
-        if(Front == -1 || Rear == -1)
-        {
-            System.out.println("Queue empty");
-        }
-        else
-        {
-            System.out.println("...Singly queue...");
-            for (int i = Front;i<=Rear;i++)
-            {
-                System.out.print(" "+ar[i]);
-            }
-            
-        }
+        
+        System.out.println();
     }
     
     public static void main(String args[])
@@ -107,3 +62,4 @@ public class SinglyQueueEXample
         }
     }
 }
+  
