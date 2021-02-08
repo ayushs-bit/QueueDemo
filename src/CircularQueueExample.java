@@ -29,7 +29,7 @@ public class CircularQueueExample
     
     public static void main(String args[])
     {
-        SinglyQueueEXample obj = new SinglyQueueEXample();
+        SinglyQueueExample obj = new SinglyQueueExample();
         while(true)
         {
             System.out.println("press 1 for insert");
