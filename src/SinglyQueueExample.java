@@ -77,7 +77,7 @@ public class SinglyQueueExample
         SinglyQueueExample obj = new SinglyQueueExample();
         while(true)
         {
-            System.out.println("press 1 for insert");
+            System.out.println("\npress 1 for insert");
             System.out.println("press 2 for delete");
             System.out.println("press 3 for traverse");
             System.out.println("press 4 for exit");
