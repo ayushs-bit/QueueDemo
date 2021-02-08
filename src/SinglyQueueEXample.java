@@ -35,7 +35,24 @@ public class SinglyQueueEXample
     
     void delete()
     {
-        
+        if(Front == -1 || Rear == -1)
+        {
+            System.out.println("Queue empty");
+        }
+        else
+        {
+            if(Front == Rear)
+            {
+                System.out.println("deleted:" +ar[Front]);
+                Front = -1;
+                Rear = -1;
+            }
+            else
+            {
+                System.out.println("deleted:" +ar[Front]);
+                Front = Front + 1;
+            }
+        }
     }
     
     void traverse()
